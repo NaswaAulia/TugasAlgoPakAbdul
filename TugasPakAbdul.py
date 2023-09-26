@@ -65,6 +65,4 @@ while True:
             print(f"Lembur : {gaji_tambahan:.2f} ({int(waktuKerja - 8)} jam {int((waktuKerja % 1) * 60)} menit * Rp.15,000)")
             print(f"Gaji Total: {gaji_total:.2f}")
 
-    ulangi = input("Apakah Anda ingin menghitung gaji lagi? (ya/tidak): ")
-    if ulangi.lower() != "ya":
-        break
+    break
