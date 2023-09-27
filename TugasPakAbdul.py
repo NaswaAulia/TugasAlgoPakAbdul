@@ -18,13 +18,13 @@ while True:
     else:
         # Ucapan selamat pagi, siang, sore, malam berdasarkan waktu
         if jamKerja >= 6.00 and jamKerja <= 12.00:
-            print(f"Selamat pagi {nama}\n")
+            print(f"\nSelamat pagi {nama}\n")
         elif jamKerja >= 12.00 and jamKerja <= 15.00:
-            print(f"Selamat siang {nama}\n")
+            print(f"\nSelamat siang {nama}\n")
         elif jamKerja >= 15.00 and jamKerja <= 18.00:
-            print(f"Selamat sore {nama}\n")
+            print(f"\nSelamat sore {nama}\n")
         elif jamKerja >= 18.00 and jamKerja <= 24.00:
-            print(f"Selamat malam {nama}\n")
+            print(f"\nSelamat malam {nama}\n")
         else:
             print("Jam masuk kerja tidak valid!")
 
@@ -37,13 +37,13 @@ while True:
         else:
             # Ucapan selamat pagi, siang, sore, malam berdasarkan waktu
             if jamKeluarKerja >= 6.00 and jamKeluarKerja <= 12.00:
-                print(f"Selamat pagi")
+                print(f"\nSelamat pagi\n")
             elif jamKeluarKerja >= 12.00 and jamKeluarKerja <= 15.00:
-                print(f"Selamat siang")
+                print(f"\nSelamat siang\n")
             elif jamKeluarKerja >= 15.00 and jamKeluarKerja <= 18.00:
-                print(f"Selamat sore")
+                print(f"\nSelamat sore\n")
             elif jamKeluarKerja >= 18.00 and jamKeluarKerja <= 24.00:
-                print(f"Selamat malam")
+                print(f"\nSelamat malam\n")
             else:
                 print("Jam keluar kerja tidak valid!")
 
@@ -58,11 +58,11 @@ while True:
             if waktuKerja <= 8:
                 gaji_total = gajiPerhari
             else:
-                gaji_tambahan = (waktuKerja - 8) * 15000
+                gaji_tambahan = (int(waktuKerja) - 8) * 15000
                 gaji_total = gajiPerhari + gaji_tambahan
 
             print(f"Gaji perhari : {gajiPerhari}")
-            print(f"Lembur : {gaji_tambahan:.2f} ({int(waktuKerja - 8)} jam {int((waktuKerja % 1) * 60)} menit * Rp.15,000)")
+            print(f"Lembur : {gaji_tambahan:.2f} ({int(waktuKerja - 8)} jam * Rp.15,000)")
             print(f"Gaji Total: {gaji_total:.2f}")
 
     break
