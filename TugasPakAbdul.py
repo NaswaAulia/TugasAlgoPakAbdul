@@ -14,7 +14,7 @@ while True:
     gajiPerhari = 175000
 
         # Mengecek apakah jam kerja valid (antara 0 hingga 24)
-    if jamKerja < 0.00 or jamKerja > 24.00:
+    if jamKerja <= 1.00 or jamKerja => 24.00:
             print("Jam masuk kerja tidak valid!")
             continue
     else:
