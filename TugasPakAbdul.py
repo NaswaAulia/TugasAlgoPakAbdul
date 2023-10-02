@@ -16,6 +16,7 @@ while True:
         # Mengecek apakah jam kerja valid (antara 0 hingga 24)
     if jamKerja < 0.00 or jamKerja > 24.00:
             print("Jam masuk kerja tidak valid!")
+            continue
     else:
             # Ucapan selamat pagi, siang, sore, malam berdasarkan waktu
             if jamKerja >= 6.00 and jamKerja <= 12.00:
