@@ -2,7 +2,7 @@
 while True:  
     nama = input("Nama : ")
 
-    if not nama.isalpha():
+    if nama.isdigit():
         print("Masukkan nama yang valid!")
         continue
 
