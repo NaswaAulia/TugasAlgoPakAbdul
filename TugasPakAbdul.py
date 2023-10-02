@@ -34,7 +34,7 @@ while True:
             jamKeluarKerja = float(input("Jam keluar kerja (jam.menit)[contoh 18.30 untuk 18:30]: "))
 
             # Mengecek apakah jam keluar kerja valid (antara 0 hingga 24)
-            if jamKeluarKerja < 0.00 or jamKeluarKerja > 24.00:
+            if jamKeluarKerja < 1.00 or jamKeluarKerja > 24.00:
                 print("Jam keluar kerja tidak valid!")
             else:
                 # Ucapan selamat pagi, siang, sore, malam berdasarkan waktu
