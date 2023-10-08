@@ -125,7 +125,7 @@ while True:
         else:
             break
     
-    #jika input bukan y maka program akan terhenti
-    if ulangi.lower() != "y":
-        print("Terimakasih <3")
-        break #akhir dari loop
+        #jika input bukan y maka program akan terhenti
+        if ulangi.lower() != "y":
+            print("Terimakasih <3")
+            break #akhir dari loop
