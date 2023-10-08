@@ -69,7 +69,7 @@ while True:
         keluarJamKerja = jam1 + menit1 / 60
 
         # Mengecek apakah jam keluar kerja valid (antara 0 hingga 24)
-        if keluarJamKerja < 1.00 or keluarJamKerja > 24.00:
+        if keluarJamKerja < 1.00 or keluarJamKerja >= 24.00:
             print("Jam keluar kerja tidak valid!")
 
         # kondisi jika jam keluar kerja == valid
@@ -119,13 +119,13 @@ while True:
     #input untuk opsi ulangi proses program atau tidak
     while True:
         ulangi = input("Ulangi Proses? (y/n) : ")
-        if len(ulangi) <= 1:
+        if len(ulangi) <= 0:
             print("opsi tidak valid")
             continue
         else:
             break
     
-        #jika input bukan y maka program akan terhenti
-        if ulangi.lower() != "y":
-            print("Terimakasih <3")
-            break #akhir dari loop
+    #jika input bukan y maka program akan terhenti
+    if ulangi.lower() != "y":
+        print("Terimakasih <3")
+        break #akhir dari loop
