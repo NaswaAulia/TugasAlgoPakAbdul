@@ -4,7 +4,7 @@ while True:
     nama = input("Nama : ")
 
     #jika nama itu angka maka nama tidak valid
-    if nama.isdigit():
+    if nama.isdigit() or not nama.isalpha():
         print("Masukkan nama yang valid!")
         #akan mengulangi proses kembali ke input variabel "nama"
         continue
