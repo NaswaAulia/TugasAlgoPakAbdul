@@ -3,10 +3,10 @@ import os
 def banner():
     print("\n \n")
 
-    print("@@@@   @@@@@   @@  @  @   @")
-    print("@   @  @   @   @ @ @   @ @")
-    print("@   @  @   @   @  @@    @")
-    print("@@@@   @@@@@   @   @    @")
+  print('@@@@@@ @  @@@  @  @@@@')
+  print('@    @ @ @  @  @ @    @')
+  print('@@@@@@ @ @  @  @ @@@@@@')
+  print('@    @ @@@   @@@ @    @')
 
     print("\n \n")
 
